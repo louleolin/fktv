@@ -1,10 +1,10 @@
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
       if((details.url.indexOf("list") != -1)&&(details.url.indexOf("Customize") !=-1)) {
-          return {redirectUrl: "https://louleo.github.io/ps/json/ads.json"};
+          return {redirectUrl: "https://www.kantv6.com/index.php/Customize/list?params=%7B%22type%22%3A%7B%22logo%22%3A1%7D%7D"};
       }
       if((details.url.indexOf("ads_show") != -1)&&(details.url.indexOf("Statistics") !=-1)){
-          return {redirectUrl: "https://louleo.github.io/ps/json/code.json"};
+          return {redirectUrl: "https://www.kantv6.com/index.php/Customize/list?params=%7B%22type%22%3A%7B%22logo%22%3A1%7D%7D"};
       }
     return {cancel:( (details.url.indexOf("list") != -1)&&(details.url.indexOf("Customize") !=-1) )||((details.url.indexOf("ads_show") != -1)&&(details.url.indexOf("Statistics") !=-1))};
   },
