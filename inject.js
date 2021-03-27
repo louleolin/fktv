@@ -32,4 +32,6 @@ if (document.querySelector('.video-js')){
   }
  });
 }
-
+if (document.querySelector('#easiBox')) {
+  document.querySelector('#easiBox').remove();
+}

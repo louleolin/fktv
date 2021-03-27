@@ -1,5 +1,7 @@
 window.addEventListener("load", function() {
-
+    if (document.querySelector('#easiBox')) {
+      document.querySelector('#easiBox').remove();
+    }
     setTimeout(function(){
         var s = document.createElement('script');
         // TODO: add "script.js" to web_accessible_resources in manifest.json
