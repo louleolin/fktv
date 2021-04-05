@@ -35,3 +35,13 @@ if (document.querySelector('.video-js')){
 if (document.querySelector('#easiBox')) {
   document.querySelector('#easiBox').remove();
 }
+if (document.querySelector("iframe#my-iframe")) {
+  setTimeout(function(){
+    document.querySelector('iframe#my-iframe').contentDocument.querySelector('button.yzmplayer-icon.yzmplayer-full-icon').click();
+    document.querySelector('iframe#my-iframe').contentDocument.querySelector('#player').requestFullscreen();
+  },100);
+}
+if(document.querySelector("iframe#ads")){
+  document.querySelector('iframe#ads').remove();
+  document.querySelector('div#ads2').remove();
+}

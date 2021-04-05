@@ -12,8 +12,14 @@ chrome.webRequest.onBeforeRequest.addListener(
     // if(details.url.indexOf("audio/advert") != -1){
     //   return {redirectUrl: "https://www.kantv6.com/index.php/Customize/list?params=%7B%22type%22%3A%7B%22logo%22%3A1%7D%7D"};
     // }
+    if(details.url.indexOf("addon/wechat/api/checkLogin2") != -1 && details.url.indexOf("iyingshi") != -1){
+      //return {cancel: true};
+    }
+    if(details.url.indexOf("api.localau.vip/ads") != -1){
+      return {cancel: true};
+    }
     return {cancel: (details.url.indexOf("audio/advert") != -1)};
   },
-  { urls: ["*://*.kantv6.com/*", "*://*.guazitv.tv/*","*://guazitv.tv/*","*://*.guazitv8.com/audio/advert/*"] },
+  { urls: ["*://*.kantv6.com/*", "*://*.guazitv.tv/*","*://guazitv.tv/*","*://*.guazitv8.com/audio/advert/*", "*://www.iyingshi9.tv/*", "*://api.localau.vip/*"] },
   ["blocking"]
 );

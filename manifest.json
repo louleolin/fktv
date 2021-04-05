@@ -1,13 +1,13 @@
 {
   "name": "Fktv",
-  "version": "1.4.1",
+  "version": "1.4.3",
   "background":{
     "scripts": ["background.js"],
     "persistent": true
   },
   "content_scripts": [
     {
-      "matches": ["*://*.kantv6.com/*","*://*.guazitv.tv/*","*://guazitv.tv/*"],
+      "matches": ["*://*.kantv6.com/*","*://*.guazitv.tv/*","*://guazitv.tv/*", "*://www.iyingshi9.tv/*"],
       "run_at":"document_start",
       "js": ["contentScript.js"]
     }

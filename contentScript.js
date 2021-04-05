@@ -10,5 +10,5 @@ window.addEventListener("load", function() {
             this.remove();
         };
         (document.head || document.documentElement).appendChild(s);
-    },5000);
+    },2000);
 });
